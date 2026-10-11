@@ -143,6 +143,10 @@ a.btn, a.btn:visited, a.btn:hover { color: var(--ink); }
 .counter { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); font-family: var(--font-serif); font-size: 17px; }
 .counter-well { display: inline-flex; gap: 2px; padding: 2px; background: var(--button-face); border: 1px solid var(--border); box-shadow: var(--bevel-sunken); }
 .counter-well span { font-family: var(--font-mono); font-weight: 600; font-size: 18px; line-height: 22px; width: 14px; text-align: center; background: var(--lcd); color: var(--lcd-ink); }
+.counter { position: relative; cursor: help; }
+.tip { display: none; position: absolute; left: 0; top: calc(100% + var(--space-2)); z-index: 10; width: max-content; max-width: min(240px, 80vw); padding: var(--space-2) var(--space-3);
+  background: var(--panel); color: var(--ink); border: 1px solid var(--border); box-shadow: var(--shadow-box); font-family: var(--font-sans); font-size: 13px; line-height: 20px; }
+.counter:hover .tip, .counter:focus .tip { display: block; }
 
 /* ── Footer ── */
 .rainbow { border: 0; height: 4px; margin: var(--space-8) 0 var(--space-4);
