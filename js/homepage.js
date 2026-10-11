@@ -30,13 +30,14 @@
   // ── Nav: highlight the section you're reading ──
   var navLinks = $$('.nav a'), sections = navLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
   if ('IntersectionObserver' in window) {
+    var spied = sections[0], atTop = function () { return window.scrollY < 80; };
+    var mark = function () { var t = atTop() ? sections[0] : spied; navLinks.forEach(function (a, i) { if (sections[i] === t) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); }); };
     var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (en) {
-        if (!en.isIntersecting) return;
-        navLinks.forEach(function (a, i) { if (sections[i] === en.target) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
-      });
+      entries.forEach(function (en) { if (en.isIntersecting) spied = en.target; });
+      mark();
     }, { rootMargin: '-40% 0px -55% 0px' });
     sections.forEach(function (s) { if (s) io.observe(s); });
+    window.addEventListener('scroll', mark, { passive: true });   // back at the top = Home
   }
 
   // ── Your-visit counter (honest: counts this browser's visits only) ──
