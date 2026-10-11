@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>@rayreside — music &amp; art</title>
+<meta name="description" content="rayreside makes music and art. Listen on Spotify and SoundCloud, and browse the artwork.">
+<meta property="og:title" content="@rayreside — music &amp; art">
+<meta property="og:description" content="Music and art by rayreside.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rayreside.com/">
+<meta property="og:image" content="https://rayreside.com/img/art/cyberpop-geisha.jpg">
+<meta name="theme-color" content="#3d55a8">
+<link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@600&family=Instrument+Serif:ital@0;1&display=swap">
+<script>
+  // Apply the saved theme before paint (Day / Night / Auto).
+  (function () {
+    var t = 'auto';
+    try { t = localStorage.getItem('rr-theme') || 'auto'; } catch (e) {}
+    var dark = t === 'dark' || (t === 'auto' && window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  })();
+</script>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="marquee" role="region" aria-label="Announcements">
+  <div class="marquee-view"><div class="marquee-track">
+    <span>★ Welcome to rayreside.com! ★</span>
+    <span>New look, same corner of the web</span>
+    <span>Now playing: hotline bling on SoundCloud</span>
+    <span>Thanks for stopping by!</span>
+  </div></div>
+  <button type="button" class="btn btn-sm marquee-toggle" aria-pressed="false" hidden><span>Pause</span></button>
+</div>
+
+<div class="page">
+
+  <header class="header" id="top">
+    <a class="logo" href="./">ray<b>reside</b><i aria-hidden="true">★</i></a>
+    <div class="header-side">
+      <ul class="util" aria-label="Quick links">
+        <li><a href="#music">Music</a></li>
+        <li><a href="#art">Art</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+      <div class="seg" role="group" aria-label="Theme" hidden>
+        <span class="seg-label" aria-hidden="true">Theme:</span>
+        <span class="seg-btns">
+          <button type="button" class="btn" data-theme-set="light" aria-pressed="false">Day</button>
+          <button type="button" class="btn" data-theme-set="dark" aria-pressed="false">Night</button>
+          <button type="button" class="btn" data-theme-set="auto" aria-pressed="false">Auto</button>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="Main">
+    <ul>
+      <li><a href="#top" aria-current="page">Home</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#art">Art</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" aria-labelledby="hero-t">
+    <h1 class="wordart" id="hero-t">Welcome To...</h1>
+    <p class="hero-sub">rayreside's homepage</p>
+    <p class="hero-body">stay a while and listen</p>
+    <p class="credit"><span class="credit-night">Photo: <a href="https://unsplash.com/photos/the-night-sky-is-filled-with-stars-Ef6iL87-vOA" target="_blank" rel="noopener">Kai Pilger</a> / Unsplash</span><span class="credit-day">Photo: <a href="https://unsplash.com/photos/white-clouds-under-blue-sky-during-daytime-gJILnne_HFg" target="_blank" rel="noopener">engin akyurt</a> / Unsplash</span></p>
+  </section>
+
+  <div class="layout" id="main">
+
+    <!-- ───────── Sidebar ───────── -->
+    <aside class="sidebar" aria-label="Sidebar">
+      <section class="box tone-sage tinted" aria-labelledby="menu-t">
+        <h2 class="box-head" id="menu-t">My Pages</h2>
+        <div class="box-body">
+          <ul class="side-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#art">Art Gallery</a></li>
+            <li><a href="#new">What's New</a></li>
+            <li><a href="#links">Links</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box tone-powder tinted" id="links" aria-labelledby="links-t">
+        <h2 class="box-head" id="links-t">Find Me Elsewhere</h2>
+        <div class="box-body">
+          <ol class="rank">
+            <li><a href="https://open.spotify.com/artist/2gvW6qeKxoynyfrVsW5YKW" target="_blank" rel="noopener me">Spotify</a> - my music</li>
+            <li><a href="https://soundcloud.com/rayreside" target="_blank" rel="noopener me">SoundCloud</a> - tracks</li>
+            <li><a href="https://www.youtube.com/@rayreside" target="_blank" rel="noopener me">YouTube</a> - videos</li>
+            <li><a href="https://www.instagram.com/ray.reside/" target="_blank" rel="noopener me">Instagram</a> - art &amp; life</li>
+            <li><a href="https://www.artstation.com/rayreside" target="_blank" rel="noopener me">ArtStation</a> - portfolio</li>
+            <li><a href="https://github.com/rayreside" target="_blank" rel="noopener me">GitHub</a> - code</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="box tone-butter tinted visitor-box" aria-labelledby="site-t" hidden>
+        <h2 class="box-head" id="site-t">Visitor Counter</h2>
+        <div class="box-body small">
+          <p class="counter"><span class="counter-txt">Your visit no.</span> <span class="counter-well" role="img"></span></p>
+        </div>
+      </section>
+    </aside>
+
+    <!-- ───────── Main column ───────── -->
+    <div class="main">
+
+      <section class="box tone-rose tinted" id="about" aria-labelledby="about-t">
+        <h2 class="box-head" id="about-t">About Me</h2>
+        <div class="box-body">
+          <p class="greet">hello there</p>
+          <p>i make music and i also draw and i also play video game and i also code and i also make cases for my split keyboard</p>
+        </div>
+      </section>
+
+      <section class="box tone-blue" id="music" aria-labelledby="music-t">
+        <h2 class="box-head" id="music-t">Music</h2>
+        <div class="box-body">
+          <div class="embed embed-spotify">
+            <p class="embed-fallback"><span>Spotify player — <a href="https://open.spotify.com/artist/2gvW6qeKxoynyfrVsW5YKW" target="_blank" rel="noopener">listen to rayreside on Spotify ↗</a></span></p>
+            <iframe title="rayreside on Spotify" src="https://open.spotify.com/embed/artist/2gvW6qeKxoynyfrVsW5YKW?utm_source=generator" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+          <h3 class="sub">Latest on SoundCloud <span class="badge tone-brick is-new">NEW!</span></h3>
+          <div class="embed embed-sc">
+            <p class="embed-fallback"><span><a href="https://soundcloud.com/rayreside/hotline-bling" target="_blank" rel="noopener">hotline bling — on SoundCloud ↗</a></span></p>
+            <iframe title="hotline bling by rayreside on SoundCloud" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2204407571&amp;color=%233d55a8&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false" width="100%" height="166" allow="autoplay" loading="lazy"></iframe>
+          </div>
+          <p class="more">Also on <a href="https://open.spotify.com/artist/2gvW6qeKxoynyfrVsW5YKW" target="_blank" rel="noopener">Spotify</a> · <a href="https://soundcloud.com/rayreside" target="_blank" rel="noopener">SoundCloud</a> · <a href="https://www.youtube.com/@rayreside" target="_blank" rel="noopener">YouTube</a></p>
+        </div>
+      </section>
+
+      <section class="box tone-lavender" id="art" aria-labelledby="art-t">
+        <h2 class="box-head" id="art-t">Art Gallery</h2>
+        <div class="box-body">
+          <p class="lede">i also draw stuff you know</p>
+          <ul class="gallery">
+            <!-- Add a piece: copy an <li>, drop the image in img/art/, update the four data-* fields. -->
+            <li class="card">
+              <h3 class="card-title">kumichō</h3>
+              <a class="card-img" href="img/art/kumicho.jpg" data-art data-title="kumichō" data-ig="https://www.instagram.com/p/CKX6t4sFHl7/"><img src="img/art/kumicho.jpg" alt="kumichō, artwork by rayreside" loading="lazy"></a>
+              <a class="card-action" href="https://www.instagram.com/p/CKX6t4sFHl7/" target="_blank" rel="noopener">on Instagram ↗</a>
+            </li>
+            <li class="card">
+              <h3 class="card-title">cyberpunk samurai</h3>
+              <a class="card-img" href="img/art/cyberpunk-samurai.jpg" data-art data-title="cyberpunk samurai" data-ig="https://www.instagram.com/p/B9mJ6lwFzwy/"><img src="img/art/cyberpunk-samurai.jpg" alt="cyberpunk samurai, artwork by rayreside" loading="lazy"></a>
+              <a class="card-action" href="https://www.instagram.com/p/B9mJ6lwFzwy/" target="_blank" rel="noopener">on Instagram ↗</a>
+            </li>
+            <li class="card">
+              <h3 class="card-title">the hypnotist</h3>
+              <a class="card-img" href="img/art/the-hypnotist.jpg" data-art data-title="the hypnotist" data-ig="https://www.instagram.com/p/B7uLeCzlESW/"><img src="img/art/the-hypnotist.jpg" alt="the hypnotist, artwork by rayreside" loading="lazy"></a>
+              <a class="card-action" href="https://www.instagram.com/p/B7uLeCzlESW/" target="_blank" rel="noopener">on Instagram ↗</a>
+            </li>
+            <li class="card">
+              <h3 class="card-title">cyberpop: geisha</h3>
+              <a class="card-img" href="img/art/cyberpop-geisha.jpg" data-art data-title="cyberpop: geisha" data-ig="https://www.instagram.com/p/B4EmsCaFGGE/"><img src="img/art/cyberpop-geisha.jpg" alt="cyberpop: geisha, artwork by rayreside" loading="lazy"></a>
+              <a class="card-action" href="https://www.instagram.com/p/B4EmsCaFGGE/" target="_blank" rel="noopener">on Instagram ↗</a>
+            </li>
+          </ul>
+          <p class="more">More on <a href="https://www.artstation.com/rayreside" target="_blank" rel="noopener">ArtStation</a> · <a href="https://www.instagram.com/ray.reside/" target="_blank" rel="noopener">Instagram</a></p>
+        </div>
+      </section>
+
+      <section class="box tone-butter" id="new" aria-labelledby="new-t">
+        <h2 class="box-head" id="new-t">What's New?</h2>
+        <div class="box-body">
+          <ul class="news">
+            <li><time datetime="2026-10-11">10/11/2026</time> <a href="#top"><b>New site!</b></a> - welcome to the new rayreside.com <span class="badge tone-brick is-new">NEW!</span></li>
+            <li><a href="#music"><b>hotline bling</b></a> - up on SoundCloud</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <hr class="rainbow">
+
+  <footer class="footer">
+    <p class="pagetop"><a class="btn btn-sm" href="#top"><span>▲ Page Top</span></a></p>
+    <ul class="footer-links" aria-label="Elsewhere">
+      <li><a href="https://open.spotify.com/artist/2gvW6qeKxoynyfrVsW5YKW" target="_blank" rel="noopener">Spotify</a></li>
+      <li><a href="https://soundcloud.com/rayreside" target="_blank" rel="noopener">SoundCloud</a></li>
+      <li><a href="https://www.youtube.com/@rayreside" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="https://www.instagram.com/ray.reside/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.artstation.com/rayreside" target="_blank" rel="noopener">ArtStation</a></li>
+      <li><a href="https://github.com/rayreside" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p>Copyright © 2026 rayreside. All rights reserved.</p>
+  </footer>
+</div>
+
+<!-- Image viewer (opened from the gallery) -->
+<div class="dialog-backdrop" hidden>
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-t" tabindex="-1">
+    <div class="dialog-head">
+      <h2 class="dialog-title" id="dlg-t">Image Viewer</h2>
+      <button type="button" class="btn dialog-close" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="dialog-body">
+      <figure class="viewer"><img alt="" data-viewer-img><figcaption data-viewer-cap></figcaption></figure>
+    </div>
+    <div class="dialog-actions">
+      <span class="dialog-pos" data-viewer-pos></span>
+      <button type="button" class="btn" data-step="-1"><span>◂ Prev</span></button>
+      <button type="button" class="btn" data-step="1"><span>Next ▸</span></button>
+      <a class="btn btn-primary" data-ig target="_blank" rel="noopener" href="#"><span>Instagram ↗</span></a>
+    </div>
+  </div>
+</div>
+
+<script src="js/homepage.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/* Hometown design tokens — generated from the Hometown design system (tokens.json) */
+
+:root, [data-theme="light"] {
+  --page: #f7f5f0;
+  --panel: #ffffff;
+  --ink: #23222a;
+  --ink-muted: #5c5b66;
+  --link: #3346a8;
+  --link-visited: #6e4a8e;
+  --link-active: #a63d3d;
+  --headline: #a63d3d;
+  --border: #8c8a94;
+  --focus: #9c3a86;
+  --success: #2f6f8a;
+  --danger: #a63d3d;
+  --blue: #3d55a8;
+  --on-blue: #ffffff;
+  --blue-tint: #e8ecf7;
+  --lavender: #c9c8ea;
+  --on-lavender: #23222a;
+  --lavender-tint: #f1f0fa;
+  --sage: #a9c6a3;
+  --on-sage: #23222a;
+  --sage-tint: #edf4eb;
+  --butter: #ecdc93;
+  --on-butter: #23222a;
+  --butter-tint: #faf6e3;
+  --rose: #e2b1c4;
+  --on-rose: #23222a;
+  --rose-tint: #f9ecf1;
+  --apricot: #ecc19c;
+  --on-apricot: #23222a;
+  --apricot-tint: #fbf0e6;
+  --powder: #b3cfe4;
+  --on-powder: #23222a;
+  --powder-tint: #ecf3f9;
+  --brick: #a6453f;
+  --on-brick: #ffffff;
+  --brick-tint: #f7e9e7;
+  --button-face: #ebe8e1;
+  --bevel-hi: #ffffff;
+  --bevel-lo: #8c8a94;
+  --night: #23223a;
+  --star: #e8e4f2;
+  --lcd: #1b1a22;
+  --lcd-ink: #b8e0a6;
+  --rainbow-1: #c9706b;
+  --rainbow-2: #d9a066;
+  --rainbow-3: #e0cc7a;
+  --rainbow-4: #8fb38a;
+  --rainbow-5: #7f9fcf;
+  --rainbow-6: #9c8cc4;
+  --shadow-ink: rgba(35, 34, 42, 0.14);
+  --bevel-raised: inset -1px -1px 0 #8c8a94, inset 1px 1px 0 #ffffff;
+  --bevel-sunken: inset 1px 1px 0 #8c8a94, inset -1px -1px 0 #ffffff;
+  --shadow-box: 3px 3px 0 rgba(35, 34, 42, 0.14);
+}
+
+[data-theme="dark"] {
+  --page: #14131a;
+  --panel: #1c1b24;
+  --ink: #ece9f2;
+  --ink-muted: #aaa7b5;
+  --link: #9fb3f2;
+  --link-visited: #d2a8e6;
+  --link-active: #f2c86b;
+  --headline: #f2c86b;
+  --border: #77748a;
+  --focus: #f2c86b;
+  --success: #8fcbe3;
+  --danger: #ef8f87;
+  --blue: #8ea2e6;
+  --on-blue: #14131a;
+  --blue-tint: #222844;
+  --lavender: #b3b0e6;
+  --on-lavender: #14131a;
+  --lavender-tint: #262438;
+  --sage: #9fc497;
+  --on-sage: #14131a;
+  --sage-tint: #1f2a20;
+  --butter: #e6d48a;
+  --on-butter: #14131a;
+  --butter-tint: #2b2818;
+  --rose: #e0a6bc;
+  --on-rose: #14131a;
+  --rose-tint: #2f2027;
+  --apricot: #e6b48b;
+  --on-apricot: #14131a;
+  --apricot-tint: #2f2419;
+  --powder: #9fc3e0;
+  --on-powder: #14131a;
+  --powder-tint: #1c2933;
+  --brick: #e0857e;
+  --on-brick: #14131a;
+  --brick-tint: #321c1b;
+  --button-face: #2e2c3a;
+  --bevel-hi: #4a475a;
+  --bevel-lo: #0b0a10;
+  --night: #0e0d14;
+  --star: #e8e4f2;
+  --lcd: #0b0a10;
+  --lcd-ink: #b8e0a6;
+  --rainbow-1: #c9706b;
+  --rainbow-2: #d9a066;
+  --rainbow-3: #e0cc7a;
+  --rainbow-4: #8fb38a;
+  --rainbow-5: #7f9fcf;
+  --rainbow-6: #9c8cc4;
+  --shadow-ink: rgba(0, 0, 0, 0.5);
+  --bevel-raised: inset -1px -1px 0 #0b0a10, inset 1px 1px 0 #4a475a;
+  --bevel-sunken: inset 1px 1px 0 #0b0a10, inset -1px -1px 0 #4a475a;
+  --shadow-box: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --radius-0: 0px;
+  --radius-sm: 3px;
+  --radius-pill: 999px;
+  --duration-ui: 150ms;
+  --duration-marquee: 22s;
+  --duration-toast: 6s;
+  --font-sans: "Atkinson Hyperlegible", Verdana, Geneva, Tahoma, sans-serif;
+  --font-serif: "Instrument Serif", "Times New Roman", Times, serif;
+  --font-grotesk: Archivo, Arial, Helvetica, sans-serif;
+  --font-mono: "IBM Plex Mono", "Courier New", Courier, monospace;
+}
+
+/* Background photography (real photos from Unsplash — see README for credits) */
+:root, [data-theme="light"] { --photo-scrim: rgba(247, 245, 240, 0.30); --photo-night: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=2400&q=70"); --photo-day: url("https://images.unsplash.com/photo-1603437873662-dc1f44901825?auto=format&fit=crop&w=2400&q=70"); }
+[data-theme="dark"] { --photo-scrim: rgba(14, 13, 20, 0.40); }
