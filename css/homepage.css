@@ -19,6 +19,7 @@ img { max-width: 100%; }
 .tone-sage     { --t-fill: var(--sage);     --t-on: var(--on-sage);     --t-tint: var(--sage-tint); }
 .tone-butter   { --t-fill: var(--butter);   --t-on: var(--on-butter);   --t-tint: var(--butter-tint); }
 .tone-rose     { --t-fill: var(--rose);     --t-on: var(--on-rose);     --t-tint: var(--rose-tint); }
+.tone-apricot  { --t-fill: var(--apricot);  --t-on: var(--on-apricot);  --t-tint: var(--apricot-tint); }
 .tone-powder   { --t-fill: var(--powder);   --t-on: var(--on-powder);   --t-tint: var(--powder-tint); }
 .tone-brick    { --t-fill: var(--brick);    --t-on: var(--on-brick);    --t-tint: var(--brick-tint); }
 
@@ -86,9 +87,7 @@ a.btn, a.btn:visited, a.btn:hover { color: var(--ink); }
 .credit a, .credit a:visited { color: inherit; }
 [data-theme="dark"] .credit-day, [data-theme="light"] .credit-night { display: none; }
 .wordart { display: inline-block; margin: 0; padding: 0 .08em; font-family: var(--font-grotesk); font-weight: 900; font-style: italic; font-stretch: 118%;
-  font-size: clamp(40px, 8vw, 64px); line-height: 1.1; letter-spacing: -.01em; color: var(--headline);
-  background: linear-gradient(90deg, var(--rainbow-1), var(--rainbow-2), var(--rainbow-3), var(--rainbow-4), var(--rainbow-5), var(--rainbow-6));
-  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(3px 3px 0 var(--shadow-ink)); }
+  font-size: clamp(40px, 8vw, 64px); line-height: 1.1; letter-spacing: -.01em; color: var(--headline); filter: drop-shadow(3px 3px 0 var(--shadow-ink)); }
 [data-theme="light"] .wordart { filter: drop-shadow(2px 2px 0 var(--ink)); }
 .hero-sub { margin: var(--space-2) 0 0; font-family: var(--font-serif); font-size: clamp(26px, 5vw, 36px); line-height: 1.15; }
 [data-theme="dark"] .hero-sub { color: var(--rainbow-3); }
@@ -137,6 +136,8 @@ a.btn, a.btn:visited, a.btn:hover { color: var(--ink); }
 .card-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--duration-ui); }
 .card-img:hover img { transform: scale(1.03); }
 .card-action { font-size: 13px; line-height: 20px; }
+.photos { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.photos .card-img { max-width: 320px; background: var(--t-tint); }
 
 /* counter */
 .counter { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); font-family: var(--font-serif); font-size: 17px; }

@@ -1,4 +1,4 @@
-/* Hometown design tokens — generated from the Hometown design system (tokens.json) */
+/* Hometown design tokens */
 
 :root, [data-theme="light"] {
   --page: #f7f5f0;
@@ -131,6 +131,6 @@
   --font-mono: "IBM Plex Mono", "Courier New", Courier, monospace;
 }
 
-/* Background photography (real photos from Unsplash — see README for credits) */
+/* Background photography (real photos from Unsplash, credited in the hero) */
 :root, [data-theme="light"] { --photo-scrim: rgba(247, 245, 240, 0.30); --photo-night: url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=2400&q=70"); --photo-day: url("https://images.unsplash.com/photo-1603437873662-dc1f44901825?auto=format&fit=crop&w=2400&q=70"); }
 [data-theme="dark"] { --photo-scrim: rgba(14, 13, 20, 0.40); }

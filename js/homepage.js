@@ -4,13 +4,6 @@
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
-  // ── Images: local copy first, Squarespace copy as a fallback ──
-  $$('img[data-fallback]').forEach(function (img) {
-    function swap() { var f = img.getAttribute('data-fallback'); if (f) { img.removeAttribute('data-fallback'); img.src = f; } }
-    img.addEventListener('error', swap);
-    if (img.complete && img.naturalWidth === 0) swap();
-  });
-
   // ── Theme: Day / Night / Auto ──
   var KEY = 'rr-theme', mq = window.matchMedia('(prefers-color-scheme: dark)');
   function get() { try { return localStorage.getItem(KEY) || 'auto'; } catch (e) { return 'auto'; } }
